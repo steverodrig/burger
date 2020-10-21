@@ -9,7 +9,7 @@
         <ol class="items">
             {{#each burgers}}
             {{#unless devoured}}
-            {{> burgers/burger-block devoured=false}}
+            {{> burgers/burger-block devoured=true}}
             {{/unless}}
             {{/each}}
         </ol>
@@ -18,20 +18,21 @@
         <ol class="items">
             {{#each burgers}}
             {{#if devoured}}
-            {{> burgers/burger-block devoured=true}}
+            {{> burgers/burger-block devoured=false}}
             {{/if}}
             {{/each}}
         </ol>
     </div>
 </div>
-<form class="row">
-  <div class="form-group">
-    <textarea class="form-control" id="newBurg" rows="3"></textarea>
-  </div>
+<div class="row text">
+    <p>Enter a new burger of your creation </p>
+</div>
+<form class="row newBurg">
+    <div class="form-group">
+        <input class="form-control" type="text" id="newBurg" name="burger_name"></input>
+    </div>
 </form>
 <div class="row">
-<input class="butt" type="submit" value="Submit">
+    <button class="butt" type="submit">Add &#127828;</button>
 </div>
-<div class="row">
-    <p>Enter a new burger of your creation and hit "Submit"</p>
-</div>
+

@@ -8,7 +8,7 @@
 }
 
 .head {
-    color: rgb(243, 179, 3);
+    color: maroon;
     
 }
 
@@ -42,4 +42,9 @@ img {
     background-color: brown;
     font-weight: 600;
     margin: 2px;
+}
+
+.text {
+    font-weight: 600;
+    color: black;
 }
