@@ -1,0 +1,37 @@
+<div class="row" id="pic">
+    <img src="burger.jpg" alt="Yummy burger">
+</div>
+<header class="row">
+    <h1 class="head">Eat-da-Burger!</h1>
+</header>
+<div class="row">
+    <div class="col-md-6 column">
+        <ol class="items">
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-block devoured=false}}
+            {{/unless}}
+            {{/each}}
+        </ol>
+    </div>
+    <div class="col-md-6">
+        <ol class="items">
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burger-block devoured=true}}
+            {{/if}}
+            {{/each}}
+        </ol>
+    </div>
+</div>
+<form class="row">
+  <div class="form-group">
+    <textarea class="form-control" id="newBurg" rows="3"></textarea>
+  </div>
+</form>
+<div class="row">
+<input class="butt" type="submit" value="Submit">
+</div>
+<div class="row">
+    <p>Enter a new burger of your creation and hit "Submit"</p>
+</div>

@@ -1,0 +1,45 @@
+.row {
+    justify-content: center;
+
+}
+
+.body {
+    background-color: rgb(7, 134, 113);
+}
+
+.head {
+    color: rgb(243, 179, 3);
+    
+}
+
+.items {
+    background-color: rgb(243, 179, 3);
+    color: red;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+.butt {
+    background-color: rgb(243, 179, 3);
+    font-weight: bold;
+    height: 50px;
+    border-radius: 8px;
+}
+
+img {
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgb(8, 158, 133), 0 6px 20px 0 rgb(8, 160, 136);
+    
+}
+
+#newBurg {
+    width: 350px;
+    margin-right: 20px;
+}
+
+.devour {
+    background-color: brown;
+    font-weight: 600;
+    margin: 2px;
+}
