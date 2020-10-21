@@ -51,7 +51,9 @@ var orm = {
         console.log(queryString);
 
         connection.query(queryString, vals, function(err, result) {
-            if (err) {throw(err)};
+            if (err) {
+              throw err;
+            }
 
             cb(result);
         });
