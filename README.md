@@ -22,6 +22,7 @@
   ## Usage
  
   From the terminal, run 'node server'.  Then go to localhost:8080 on your web browser.  Hit the 'Devour' button next to existing burgers to "eat" them.  Enter your own burger and hit the 'add' button to add to the list.
+  ![image](https://user-images.githubusercontent.com/21253903/96799334-832bba00-13c8-11eb-9e45-54d780a8637a.png)
 
   ## Contributing
 
